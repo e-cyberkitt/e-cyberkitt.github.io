@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+}
+.full {
+  background-image: url("../images/slider.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 730px;
+}
+.navbar {
+  height: 90px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 500px;
+  /* background-color: cyan; */
+}
+
+nav {
+  position: fixed;
+  /* top: 50%; */
+  margin: auto;
+  /* top: 5%; */
+  z-index: 9999;
+}
+
+li {
+  color: white;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  padding: 14px 16px;
+}
+li a {
+  color: white;
+}
+li a:hover {
+  /* background-color: #555; */
+  color: blue;
+}
+li a:link {
+  text-decoration: none;
+}
+.section {
+  height: 300px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 200px;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+button {
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  margin-left: 640px;
+  margin-top: 30px;
+  border-radius: 70px;
+  padding: 20px;
+}
+button a:hover {
+  color: rgb(80, 80, 230);
+}
+button a:link {
+  text-decoration: none;
+}
+.down {
+  background-image: url("../images/tech.jpg");
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+}
+h3 {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  font-family: Agency FB;
+  margin-top: -4px;
+}
+p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-family: Agency FB;
+  margin-top: -60px;
+}
+.grid-container {
+  display: grid;
+  height: 200px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  /* background-color: #2196f3; */
+  padding: 150px;
+  margin-top: 40px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: white;
+  font-size: 30px;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+h5 {
+  text-align: center;
+  margin-top: 70px;
+  font-family: Agency FB;
+  font-size: 18px;
+}
+.ela {
+  margin-top: -20px;
+}
+.lan {
+  background-image: url("../images/apps.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
+  height: 1100px;
+}
+.ear {
+  height: 880px;
+  /* background-color: red; */
+}
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+.slider {
+  width: 100%;
+  /* background-color: green; */
+  height: 400px;
+}
+.container {
+  position: relative;
+  width: 350px;
+  height: 340px;
+  /* background-color: red; */
+  /* float: left; */
+  margin-left: 240px;
+  margin-top: 30px;
+  margin-right: -180px;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h6 span {
+  text-decoration-line: line-through;
+}
+.ala {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 300px;
+}
+.all {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer {
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/contact.jpg");
+  float: left;
+}
+.real {
+  margin-top: 300px;
+}
+.semi-footer {
+  width: 100%;
+  height: 70px;
+  background-color: #333333;
+  float: left;
+}
+h4 {
+  margin-left: 30px;
+  color: white;
+  font-family: Agency FB;
+}
+.h1 {
+  margin-top: -10px;
+  font-family: Agency FB;
+}
+.h2 {
+  margin-top: -15px;
+  font-family: Agency FB;
+  font-size: 25px;
+}
+.icon {
+  float: right;
+  margin-top: -30px;
+  margin-right: 50px;
+  color: white;
+  font-size: 17px;
+}

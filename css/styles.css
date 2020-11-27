@@ -1,0 +1,226 @@
+.body {
+  width: 100%;
+  margin: none;
+}
+.full {
+  background-image: url(slider.jpg);
+  opacity: 2;
+  background-size: cover;
+  width: 100%;
+  height: 730px;
+}
+.navbar {
+  height: 90px;
+  overflow: hidden;
+  /* background-color: cyan; */
+}
+
+nav {
+  position: fixed;
+  /* top: 50%; */
+  left: 30%;
+  top: 5%;
+}
+
+li {
+  color: rgb(107, 35, 189);
+  font-size: 20px;
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  padding: 14px 16px;
+}
+li a:hover {
+  /* background-color: #555; */
+  color: white;
+}
+li a:link {
+  text-decoration: none;
+}
+.section {
+  height: 300px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 200px;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+button {
+  font-size: 20px;
+  color: black;
+  background-color: blue;
+  margin-left: 650px;
+  margin-top: 30px;
+  border-radius: 70px;
+  padding: 20px;
+}
+button a:hover {
+  color: white;
+}
+button a:link {
+  text-decoration: none;
+}
+.down {
+  background-image: url(newww.png);
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+}
+h3 {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  font-family: fantasy;
+  margin-top: -4px;
+}
+p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-family: fantasy;
+  margin-top: -60px;
+}
+.grid-container {
+  display: grid;
+  height: 200px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  /* background-color: #2196f3; */
+  padding: 150px;
+  margin-top: 40px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: white;
+  font-size: 30px;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+h5 {
+  text-align: center;
+  margin-top: 70px;
+}
+.ela {
+  margin-top: -20px;
+}
+.lan {
+  background-image: url(/new.jpg);
+  background-size: cover;
+  height: 700px;
+}
+.ear {
+  height: 880px;
+  /* background-color: red; */
+}
+.slider {
+  width: 100%;
+  /* background-color: green; */
+  height: 400px;
+}
+.container {
+  position: relative;
+  width: 350px;
+  height: 340px;
+  /* background-color: red; */
+  /* float: left; */
+  margin-left: 190px;
+  margin-top: 30px;
+  margin-right: -180px;
+  display: inline-block;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+h6 span {
+  text-decoration-line: line-through;
+}
+.footer {
+  width: 100%;
+  height: 700px;
+  background-color: #35383c;
+  float: left;
+}
+.semi-footer {
+  width: 100%;
+  height: 40px;
+  /* background-color: green; */
+  float: left;
+}
+h4 {
+  margin-left: 30px;
+}
